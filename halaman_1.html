@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            margin-bottom: 50px; /* Adjust this value to match the height of your footer */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .slideshow {
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide {
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Perubahan untuk responsivitas */
+        @media screen and (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+
+            .skills {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="foto\568360.jpg" alt="Profile Picture">
+        <h1>Portofolio Saya</h1>
+    </header>
+
+    <section>
+        <button onclick="window.location.href='index.html'">Kembali ke Portofolio</button>
+    </section>
+
+    <section>
+        <p></p>
+        <a style="margin-bottom: 300px;" href="https://github.com/rAwrrrrrr1/Uas_Web.git">Link Github</a>
+
+        <section id="slideshow1" class="slideshow">
+            <img class="slide" src="foto\Capture.png" alt="Slide 1">
+            <img class="slide" src="foto\Capture1.png" alt="Slide 2">
+            <!-- Add more slides as needed -->
+        </section>            
+    </section>
+       
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Albert William Santosa. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the slideshow
+        let currentSlide1 = 0;
+        let currentSlide2 = 0;
+
+        const slides1 = document.querySelectorAll('#slideshow1 .slide');
+        const slides2 = document.querySelectorAll('#slideshow2 .slide');
+
+        const totalSlides1 = slides1.length;
+        const totalSlides2 = slides2.length;
+
+        function showSlide1(index) {
+            slides1.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+
+            slides1[index].style.display = 'block';
+        }
+
+        function showSlide2(index) {
+            slides2.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+
+            slides2[index].style.display = 'block';
+        }
+
+        function nextSlide1() {
+            currentSlide1 = (currentSlide1 + 1) % totalSlides1;
+            showSlide1(currentSlide1);
+        }
+
+        function nextSlide2() {
+            currentSlide2 = (currentSlide2 + 1) % totalSlides2;
+            showSlide2(currentSlide2);
+        }
+
+        function startSlideshow1() {
+            setInterval(nextSlide1, 3000); // Change slide every 3 seconds (adjust as needed)
+        }
+
+        function startSlideshow2() {
+            setInterval(nextSlide2, 3000); // Change slide every 3 seconds (adjust as needed)
+        }
+
+        startSlideshow1();
+        startSlideshow2();
+    </script>
+
+</body>
+
+</html>

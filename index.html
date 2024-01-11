@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            padding-bottom: 50px; /* Adjust this value to match the height of your footer */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .slideshow {
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide {
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+        .button-4 {
+          appearance: none;
+          background-color: #FAFBFC;
+          border: 1px solid rgba(27, 31, 35, 0.15);
+          border-radius: 6px;
+          box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+          box-sizing: border-box;
+          color: #24292E;
+          cursor: pointer;
+          display: inline-block;
+          font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          list-style: none;
+          padding: 6px 16px;
+          position: relative;
+          transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          vertical-align: middle;
+          white-space: nowrap;
+          word-wrap: break-word;
+        }
+
+        .button-4:hover {
+          background-color: #F3F4F6;
+          text-decoration: none;
+          transition-duration: 0.1s;
+        }
+
+        .button-4:disabled {
+          background-color: #FAFBFC;
+          border-color: rgba(27, 31, 35, 0.15);
+          color: #959DA5;
+          cursor: default;
+        }
+
+        .button-4:active {
+          background-color: #EDEFF2;
+          box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+          transition: none 0s;
+        }
+
+        .button-4:focus {
+          outline: 1px transparent;
+        }
+
+        .button-4:before {
+          display: none;
+        }
+
+        .button-4:-webkit-details-marker {
+          display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+
+            .skills {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="foto\568360.jpg" alt="Profile Picture">
+        <h1>Portofolio Saya</h1>
+    </header>
+
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>Selamat datang di halaman portofolio saya. Saya adalah seorang pengembang web dengan minat dalam pengembangan
+            front-end.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Vue</li>
+            <li>Laravel</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Apa Saja Yang Dibuat</h2>
+        <button class="button-4" onclick="window.location.href='halaman_1.html'" role="button">web</button>
+        
+    </section>
+
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Albert William Santosa. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+</body>
+
+</html>
